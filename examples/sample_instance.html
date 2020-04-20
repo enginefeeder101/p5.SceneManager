@@ -1,0 +1,41 @@
+<div id="canvasHolder" style="border:1px solid black;width:600px;height:500px"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+<script src="../lib/p5scenemanager.js"></script>
+<script>
+    const program = new p5(Program, "canvasHolder");
+
+    // Use p5.js in "instance mode"
+    function Program(parent) {
+        parent.setup = function() {
+            parent.createCanvas(600, 500);
+
+            const mgr = new p5SceneManager(parent);
+            mgr.wire();
+            mgr.showScene(LineAnimation);
+        }
+    }
+
+    // p5.SceneManager can be used also when p5.js is used in "instance mode"
+    function LineAnimation(parent) {
+        this.y = 0;
+
+        this.setup = function() {
+            parent.background("teal");
+        }
+
+        this.draw = function() {
+            parent.background("teal");
+
+            parent.line(0, this.y, parent.width, this.y);
+            this.y++;
+
+            if (this.y > parent.height)
+                this.y = 0;
+        }
+
+        this.mousePressed = function() {
+            console.log("Mouse Pressed");
+        }
+    }
+</script>
