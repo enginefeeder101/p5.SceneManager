@@ -1,0 +1,32 @@
+{
+    "name": "p5.scenemanager",
+    "version": "1.0.0",
+    "description": "p5.SceneManager for p5.js games and applications",
+    "main": "./lib/p5scenemanager.js",
+    "directories": {
+        "example": "examples",
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/enginefeeder101/p5.SceneManager.git"
+    },
+    "keywords": [
+        "p5js",
+        "p5",
+        "scenemanager",
+        "p5scenemanager",
+        "p5.scenemanager",
+        "games",
+        "scenes"
+    ],
+    "author": "enginefeeder101",
+    "license": "CC-BY-4.0",
+    "bugs": {
+        "url": "https://github.com/enginefeeder101/p5.SceneManager/issues"
+    },
+    "homepage": "https://github.com/enginefeeder101/p5.SceneManager#p5scenemanager"
+}
