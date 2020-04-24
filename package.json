@@ -1,6 +1,6 @@
 {
     "name": "p5.scenemanager",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "p5.SceneManager for p5.js games and applications",
     "main": "./lib/p5scenemanager.js",
     "directories": {
